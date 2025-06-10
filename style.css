@@ -1,0 +1,54 @@
+/* reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:"Libre Baskerville" ;
+    src: url(./fontes/Libre_Baskerville\,Recursive/);
+}
+
+@font-face {
+    font-family: "inter";
+    src: url(./fontes/Inter/);
+}
+ :root{
+    --vermelho-ecoraizes: #800000;
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --cinza: #808080;
+    --fundo-site: #F4F4F4; 
+ }
+
+ .container-grid {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--fundo-site);
+}
+
+.banner {
+    background-image: url(./img/banner.png);
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-position: 0 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: 100%;
+
+}
+
+header img{
+    width: 300px;
+    height: 150px;
+}
+
+
