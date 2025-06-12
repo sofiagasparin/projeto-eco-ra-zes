@@ -1,12 +1,12 @@
 /* reset CSS */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 @font-face {
-    font-family:"Libre Baskerville" ;
+    font-family: "Libre Baskerville";
     src: url(./fontes/Libre_Baskerville\,Recursive/);
 }
 
@@ -14,15 +14,16 @@
     font-family: "inter";
     src: url(./fontes/Inter/);
 }
- :root{
+
+:root {
     --vermelho-ecoraizes: #800000;
     --branco: #FFFFFF;
     --preto: #000000;
     --cinza: #808080;
-    --fundo-site: #F4F4F4; 
- }
+    --fundo-site: #F4F4F4;
+}
 
- .container-grid {
+.container-grid {
     width: 80vw;
     max-width: 1400px;
     margin: 0 auto;
@@ -35,20 +36,123 @@ body {
 
 .banner {
     background-image: url(./img/banner.png);
-    height: 120vh;
+    height: 100vh;
     background-repeat: no-repeat;
-    background-position: 0 200px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-size: 100%;
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+header .container-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
 
 }
 
-header img{
-    width: 300px;
-    height: 150px;
+header img {
+    height: 80px;
+}
+
+.icones svg {
+    height: 150%;
+    width: 50px;
+    float: right;
+    display: flex;
 }
 
 
+#sobre {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-top: 40px;
+}
+
+#sobre img {
+    max-width: 430px;
+    width: 50%;
+    border-radius: 40px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+}
+
+#sobre h2 {
+  font-size: 40px;
+  color: var(--vermelho-ecoraizes);
+}
+
+
+#sobre p {
+    font-family: "libre Baskerville ", regular;
+    font-size: 20px;
+    text-align: "inter";
+    margin-top: 30px;
+}
+
+.container-icones {
+    display: flex;
+    align-items: center;
+
+}
+
+#categoria h3{
+    color: var(--vermelho-ecoraizes);
+   font-size: 40px;
+   font-family: "libre  Baskerville";
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+}
+
+#categoria p{
+     text-align: "inter";
+      font-size: 20px;
+   font-family: "libre  Baskerville";
+   display: flex;
+   justify-content: center;
+   text-align: justify;
+   font-size: 20px;
+   margin-top: 30px;
+   justify-content: flex-start;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+#categoria img{
+    max-width: 450px;
+    width: 70%;
+}
+   
+.seta {
+    height: 60px;
+}
+
+.banner-2 {
+   background-image: url(./img/banner\ 2.jpg);
+   height: 200vh;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: 100%;
+    
+}
