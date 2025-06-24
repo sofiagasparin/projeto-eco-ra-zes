@@ -66,6 +66,27 @@ header img {
     height: 80px;
 }
 
+.menu{
+     max-width: 700px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    font-size: 20px;
+    color: var(--vermelho-ecoraizes);
+    font-family: "Recursive", sans-linear;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+
+    transition: text-decoration 500ms ease;
+}
+
+.menu a:hover {
+    text-decoration-color: var(--verde-ecoraizes);
+}
 .icones svg {
     height: 150%;
     width: 40px;
